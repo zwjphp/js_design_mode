@@ -4,10 +4,10 @@ var lev=function(){
 };
 
 function Parent(){
-	var Child = new object();
+	var Child = new Object();
 	Child.name = "李小龙";
 	Child.age  = "30";
-	Chile.lev  = lev;
+	Child.lev  = lev;
 	return Child;
 };
 

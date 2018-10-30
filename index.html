@@ -10,23 +10,42 @@
 
 <script>
 //工厂模式
+// var lev=function(){
+//     return "嘿哈";
+// };
+
+// function Parent(){
+//     var Child = new Object();
+//     Child.name = "李小龙";
+//     Child.age  = "30";
+//     Child.lev  = lev;
+//     return Child;
+// };
+
+// // alert("123");
+
+// var x=Parent();
+// alert(x.name);
+// alert(x.lev());
+
+
+//js构造函数模式
+
 var lev=function(){
     return "嘿哈";
 };
 
 function Parent(){
-    var Child = new Object();
-    Child.name = "李小龙";
-    Child.age  = "30";
-    Child.lev  = lev;
-    return Child;
+    this.name= "李小龙";
+    this.age="30";
+    this.lev=lev;
 };
-
-// alert("123");
 
 var x=Parent();
 alert(x.name);
 alert(x.lev());
+
+
 
 </script>
 <body>
