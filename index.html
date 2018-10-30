@@ -8,6 +8,27 @@
     <script type="text/javascript" src="factory.js"></script>
    </head>
 
+<script>
+//工厂模式
+var lev=function(){
+    return "嘿哈";
+};
+
+function Parent(){
+    var Child = new Object();
+    Child.name = "李小龙";
+    Child.age  = "30";
+    Child.lev  = lev;
+    return Child;
+};
+
+// alert("123");
+
+var x=Parent();
+alert(x.name);
+alert(x.lev());
+
+</script>
 <body>
 
 </body>
